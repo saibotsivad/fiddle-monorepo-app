@@ -1,8 +1,8 @@
 /*
 
-Everything in `_env/${RUNTIME}/*` is accessible via `@/env/*` aka you can't access the wrong runtime:
+Everything in `_runtime/${RUNTIME}/*` is accessible via `@/runtime/*` aka you can't access the wrong runtime:
 
-  import { saveJson } from '@/env/save-json.js'
+  import { saveJson } from '@/runtime/save-json.js'
 
 */
 
