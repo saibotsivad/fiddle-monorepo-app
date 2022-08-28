@@ -11,5 +11,7 @@ import { mkdir, writeFile } from 'node:fs/promises'
 
 export const saveJson = async (filepath, data) => {
   await mkdir(dirname(filepath), { recursive: true })
-  await writeFile(filepath, JSON.stringify(data, undefined, 4), 'utf8')
+  const json = JSON.stringify(data, undefined, 4)
+  await writeFile(filepath, json, 'utf8')
+  return json
 }

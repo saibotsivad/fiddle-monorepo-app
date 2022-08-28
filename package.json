@@ -1,0 +1,11 @@
+{
+  "name": "fiddle-monorepo-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "cd service/service1 && npm install"
+  },
+  "dependencies": {
+    "symlink-cli": "^1.0.0"
+  }
+}

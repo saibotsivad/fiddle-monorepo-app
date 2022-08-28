@@ -1,5 +1,11 @@
 {
+  "name": "fiddle-monorepo-app",
+  "private": true,
+  "type": "module",
   "monorepo": {
     "runtime": "nodejs"
+  },
+  "scripts": {
+    "postinstall": "mkdir -p node_modules/@ && symlink ./_lib ./node_modules/@/lib && symlink ../../_shared ./node_modules/@/shared && symlink ../../_runtime/nodejs ./node_modules/@/runtime"
   }
 }
