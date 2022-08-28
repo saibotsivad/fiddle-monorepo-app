@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "postinstall": "cd service/service1 && npm install"
+    "postinstall": "cd service/service1 && npm install",
+    "demo": "node script/run-service1-main.js"
   },
   "dependencies": {
     "symlink-cli": "^1.0.0"
